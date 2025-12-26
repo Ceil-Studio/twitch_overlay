@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Twitch Overlay</title>
+<style>
+  body {
+    margin: 0;
+    background: transparent;
+    color: white;
+    font-family: sans-serif;
+  }
+  #chat {
+    padding: 10px;
+    font-size: 22px;
+  }
+  .msg {
+    margin-bottom: 6px;
+    text-shadow: 0 0 4px black;
+    animation: fadein 0.2s ease;
+  }
+  .user {
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div id="chat"></div>
+
+<script src="chat.js"></script>
+</body>
+</html>
+
