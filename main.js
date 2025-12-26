@@ -8,7 +8,7 @@ function createWindow() {
     width: 400,
     height: 600,
     x: 20,
-    y: 20,
+    y: 120,
     frame: false,
     transparent: true,
     alwaysOnTop: true,
